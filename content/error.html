@@ -10,7 +10,7 @@
             crossorigin="anonymous"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--# if expr="$status = 502" -->
+        <!--# if expr="$status = 403" -->
         <meta http-equiv="refresh" content="5" />
         <!--# endif -->
         <style>
@@ -38,9 +38,9 @@
     </head>
     <body>
         <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
-            <!--# if expr="$status = 502" -->
-            <h1>Looks like we're having trouble.</h1>
-            <p>You will be redirected in a few seconds...</p>
+            <!--# if expr="$status = 403" -->
+            <h1>На сайте ведутся технические работы.</h1>
+            <p>Приносим извинения за возможные неудобства.<br>Повторите вход позднее.</p>
             <!--# else -->
             <h1>
                 <!--# echo var="status" default="" -->
